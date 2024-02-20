@@ -44,40 +44,46 @@ After installation you can optionally run following in CMD to see installed file
 
 ![PyCharm Download Page](https://github.com/dse-dev/testCases_240219/blob/main/docs/img/pycharm/00_install_pycharm.JPG "PyCharm Download Page")
 
-<img src='https://github.com/dse-dev/testCases_240219/blob/main/docs/img/pycharm/00_install_pycharm.JPG' width='25'>
-<img src='./docs/img/pycharm/00_install_pycharm.JPG' width='25'>
-<img src='/docs/img/pycharm/00_install_pycharm.JPG' width='25'>
+<img src='https://github.com/dse-dev/testCases_240219/blob/main/docs/img/pycharm/00_install_pycharm.JPG' width='640'>
+<img src='./docs/img/pycharm/00_install_pycharm.JPG' width='640'>
+<img src='/docs/img/pycharm/00_install_pycharm.JPG' width='640'>
 
 ### Open UI test directory
 
 - Open PyCharm
-- open "testCases_240219\testCases\UI Tests\testCases" from the git repository (link)
+- open the linked test directory from the git repository
 	-  [UI Test Directory](/testCases/API%20Tests)
 
-If not included in the repository it may be required to install Selenium into the environment.
 
+If not included in the repository it may be required to install Selenium into the environment.
 Therefore navigate to the terminal and enter:
 
 > pip install selenium
+
 
 ![PyCharm Selenium Install](https://github.com/dse-dev/testCases_240219/blob/main/docs/img/pycharm/00_install_selenium.JPG "PyCharm Selenium Install")
 
 
 ### Open and run tests 1..3
 
-- Open testCase1.py from the navigation bar
-- right-click into IDE
-- select run 'testCase1'
+- Open "testCase1.py" from the navigation bar
+- right-click into the PyCharm IDE
+- select "Run 'testCase1'"
 
 ![PyCharm Selenium Test 1](https://github.com/dse-dev/testCases_240219/blob/main/docs/img/pycharm/01_test1_run.JPG "PyCharm Selenium Test 1")
 
-A browser will open up and follow the instructions from the test script
 
-and results from the test will appear in the PyCharm console
+Chrome Browser will now open up and follow the instructions from the test script automatically.
+I recommend not to navigate or click anything while the test is running
+The results of the performed test will appear in the PyCharm console
+
 
 ![PyCharm Selenium Test Result](https://github.com/dse-dev/testCases_240219/blob/main/docs/img/pycharm/02_test1_result.JPG "PyCharm Selenium Test Result")
 
-Repeat same procedure with test cases 2 and 3
+
+Repeat same procedure with test cases 2 and 3.
+Choose "testCase2.py" and "testCase3.py" and run each test.
+Again, Chrome Browser will open and run the tests while results will be printed on the PyCharm console
 
 
 ## Postman Web Browser Platform
@@ -92,23 +98,28 @@ A account is required to use Postman
 
 ### Import Postman API Tests
 
-Postman Test Cases have been exported in a JSON file ([Link](./testCases/API%20Tests/Sogeti%20API%20Test.postman_collection.json))
-[Link](file:https://github.com/dse-dev/testCases_240219/blob/main/testCases/API%20Tests/Sogeti%20API%20Test.postman_collection.json)
-This can be imported by using the provided file from the repository
+Postman Test Cases have been exported in a JSON file
+All API tests can be imported by using the provided file from the repository
+- ([Link](./testCases/API%20Tests/Sogeti%20API%20Test.postman_collection.json))
+
 
 - Open your Workspace
 
 ![Postman Workspace](https://github.com/dse-dev/testCases_240219/blob/main/docs/img/postman/01_nav_myworkspace.JPG "Postman Workspace")
 
 - Click 'Import' on left navigation bar
-- Choose (Sogeti API Test.postman_collection.json)
+- Import this file: ([Sogeti API Test.postman_collection.json](./testCases/API%20Tests/Sogeti%20API%20Test.postman_collection.json))
 - Click OK
+
+All API test cases should be imported and 
+
 
 ![Postman Import](https://github.com/dse-dev/testCases_240219/blob/main/docs/img/postman/02_nav_import.JPG "Postman Import")
 
 ![Postman Drop File](https://github.com/dse-dev/testCases_240219/blob/main/docs/img/postman/03_import_dropfile.JPG "Postman Drop File")
 
-You will now have the directory "Sogeti API Test" with testCase4 and 5 in your Workspace
+
+You will now see the directory "Sogeti API Test" with testCase4 and ..5 in your Workspace
 
 ![Tests in workspace](https://github.com/dse-dev/testCases_240219/blob/main/docs/img/postman/04_workspace_test4%2B5.JPG "Tests in workspace")
 
