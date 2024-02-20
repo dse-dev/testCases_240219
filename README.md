@@ -7,10 +7,12 @@
 
 ### Requirements
 
+- Windows 10 OS
 - Python
 - Python IDE
 - Selenium
-- Postman Web Platform
+- Free Postman Account
+
 
 ## Python
 
@@ -37,16 +39,28 @@ After installation you can optionally run following in CMD to see installed file
 ### Installation of PyCharm
 
 - Download community version of PyCharm
-    - ```(https://www.jetbrains.com/pycharm/download/)```
+    - https://www.jetbrains.com/pycharm/download/
 - Run the installer exe after download to install PyCharm
 
-![PyCharm Download Page](https://github.com/dse-dev/testCases_240219/blob/main/docs/img/pycharm/00_install_pycharm.JPG "PyCharm Download Page")
+![PyCharm Download Page](https://github.com/dse-dev/testCases_240219/blob/main/docs/img/pycharm/00_install_pycharm.JPG =640x "PyCharm Download Page")
+![PyCharm Download Page](https://github.com/dse-dev/testCases_240219/blob/main/docs/img/pycharm/00_install_pycharm.JPG =640x200 "PyCharm Download Page")
+![PyCharm Download Page](https://github.com/dse-dev/testCases_240219/blob/main/docs/img/pycharm/00_install_pycharm.JPG =x500 "PyCharm Download Page")
+
+![PyCharm Download Page](https://github.com/dse-dev/testCases_240219/blob/main/docs/img/pycharm/00_install_pycharm.JPG =640x)
+![PyCharm Download Page](https://github.com/dse-dev/testCases_240219/blob/main/docs/img/pycharm/00_install_pycharm.JPG =640x200)
+![PyCharm Download Page](https://github.com/dse-dev/testCases_240219/blob/main/docs/img/pycharm/00_install_pycharm.JPG =x500)
 
 
 ### Open UI test directory
 
 - Open PyCharm
 - open "testCases_240219\testCases\UI Tests\testCases" from the git repository (link)
+    -  [UI Test Directory](https://github.com/dse-dev/testCases_240219/tree/main/testCases/API%20Tests)
+	-  [UI Test Directory](./testCases/API%20Tests)
+	-  [UI Test Directory](/testCases/API%20Tests)
+    -  [UI Test Directory](https://github.com/dse-dev/testCases_240219/tree/main/testCases/API Tests)
+	-  [UI Test Directory](./testCases/API Tests)
+	-  [UI Test Directory](/testCases/API Tests)
 
 If not included in the repository it may be required to install Selenium into the environment.
 
@@ -76,6 +90,8 @@ Repeat same procedure with test cases 2 and 3
 
 ## Postman Web Browser Platform
 
+A account is required to use Postman
+
 - Create a free account on
     - https://www.postman.com/
 - Sign in after creating account
@@ -84,7 +100,8 @@ Repeat same procedure with test cases 2 and 3
 
 ### Import Postman API Tests
 
-Postman Test Cases have been exported in a JSON file (link)
+Postman Test Cases have been exported in a JSON file ([Link](./testCases/API%20Tests/Sogeti%20API%20Test.postman_collection.json))
+[Link](file:https://github.com/dse-dev/testCases_240219/blob/main/testCases/API%20Tests/Sogeti%20API%20Test.postman_collection.json)
 This can be imported by using the provided file from the repository
 
 - Open your Workspace
@@ -134,7 +151,14 @@ As this case is data driven, "Body" and the "Run Collection" have to be configur
 - only tick the checkbox of testCase5
 - import configuration file by selecting from repository
     - [Select "testCase5post.json"](file:https://github.com/dse-dev/testCases_240219/blob/main/testCases/API%20Tests/testCase5post.json)
+    - [Select "testCase5post.json"](file:/testCases/API%20Tests/testCase5post.json)
+	- [Select "testCase5post.json"](file:./testCases/API%20Tests/testCase5post.json)
 
+
+    - [Select "testCase5post.json"](file:https://github.com/dse-dev/testCases_240219/blob/main/testCases/API Tests/testCase5post.json)
+    - [Select "testCase5post.json"](file:/testCases/API Tests/testCase5post.json)
+	- [Select "testCase5post.json"](file:./testCases/API Tests/testCase5post.json)
+	
 ![Postman Testcase 5 Run Collection](https://github.com/dse-dev/testCases_240219/blob/main/docs/img/postman/08_testCase5_runCollection.JPG "Postman Testcase 5 Run Collection")
 
 ![Postman Testcase 5 Select File](https://github.com/dse-dev/testCases_240219/blob/main/docs/img/postman/10_testCase5_selectFile.JPG "Postman Testcase 5 Select File")
