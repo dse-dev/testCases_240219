@@ -42,25 +42,17 @@ After installation you can optionally run following in CMD to see installed file
     - https://www.jetbrains.com/pycharm/download/
 - Run the installer exe after download to install PyCharm
 
-![PyCharm Download Page](https://github.com/dse-dev/testCases_240219/blob/main/docs/img/pycharm/00_install_pycharm.JPG =640x "PyCharm Download Page")
-![PyCharm Download Page](https://github.com/dse-dev/testCases_240219/blob/main/docs/img/pycharm/00_install_pycharm.JPG =640x200 "PyCharm Download Page")
-![PyCharm Download Page](https://github.com/dse-dev/testCases_240219/blob/main/docs/img/pycharm/00_install_pycharm.JPG =x500 "PyCharm Download Page")
+![PyCharm Download Page](https://github.com/dse-dev/testCases_240219/blob/main/docs/img/pycharm/00_install_pycharm.JPG "PyCharm Download Page")
 
-![PyCharm Download Page](https://github.com/dse-dev/testCases_240219/blob/main/docs/img/pycharm/00_install_pycharm.JPG =640x)
-![PyCharm Download Page](https://github.com/dse-dev/testCases_240219/blob/main/docs/img/pycharm/00_install_pycharm.JPG =640x200)
-![PyCharm Download Page](https://github.com/dse-dev/testCases_240219/blob/main/docs/img/pycharm/00_install_pycharm.JPG =x500)
-
+<img src='https://github.com/dse-dev/testCases_240219/blob/main/docs/img/pycharm/00_install_pycharm.JPG' width='25'>
+<img src='./docs/img/pycharm/00_install_pycharm.JPG' width='25'>
+<img src='/docs/img/pycharm/00_install_pycharm.JPG' width='25'>
 
 ### Open UI test directory
 
 - Open PyCharm
 - open "testCases_240219\testCases\UI Tests\testCases" from the git repository (link)
-    -  [UI Test Directory](https://github.com/dse-dev/testCases_240219/tree/main/testCases/API%20Tests)
-	-  [UI Test Directory](./testCases/API%20Tests)
 	-  [UI Test Directory](/testCases/API%20Tests)
-    -  [UI Test Directory](https://github.com/dse-dev/testCases_240219/tree/main/testCases/API Tests)
-	-  [UI Test Directory](./testCases/API Tests)
-	-  [UI Test Directory](/testCases/API Tests)
 
 If not included in the repository it may be required to install Selenium into the environment.
 
@@ -150,14 +142,15 @@ As this case is data driven, "Body" and the "Run Collection" have to be configur
 - click Run Collection
 - only tick the checkbox of testCase5
 - import configuration file by selecting from repository
-    - [Select "testCase5post.json"](file:https://github.com/dse-dev/testCases_240219/blob/main/testCases/API%20Tests/testCase5post.json)
-    - [Select "testCase5post.json"](file:/testCases/API%20Tests/testCase5post.json)
-	- [Select "testCase5post.json"](file:./testCases/API%20Tests/testCase5post.json)
+    - [Select testCase5post.json](file:https://github.com/dse-dev/testCases_240219/blob/main/testCases/API%20Tests/testCase5post.json)
+    - [Select testCase5post.json](file:/testCases/API%20Tests/testCase5post.json)
+	- [Select testCase5post.json](file:./testCases/API%20Tests/testCase5post.json)
 
 
-    - [Select "testCase5post.json"](file:https://github.com/dse-dev/testCases_240219/blob/main/testCases/API Tests/testCase5post.json)
-    - [Select "testCase5post.json"](file:/testCases/API Tests/testCase5post.json)
-	- [Select "testCase5post.json"](file:./testCases/API Tests/testCase5post.json)
+    - [Select testCase5post.json](https://github.com/dse-dev/testCases_240219/blob/main/testCases/API%20Tests/testCase5post.json)
+    - [Select testCase5post.json](/testCases/API%20Tests/testCase5post.json)
+	- [Select testCase5post.json](./testCases/API%20Tests/testCase5post.json)
+	
 	
 ![Postman Testcase 5 Run Collection](https://github.com/dse-dev/testCases_240219/blob/main/docs/img/postman/08_testCase5_runCollection.JPG "Postman Testcase 5 Run Collection")
 
