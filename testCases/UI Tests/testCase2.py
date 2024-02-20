@@ -1,6 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver import ActionChains, Keys
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import Select
 import string
 import random
 import time
@@ -76,6 +77,9 @@ input_email = driver.find_element(By.XPATH, '/html/body/div[1]/main/div[3]/div/d
 
 # Fill 'Email'
 email = ''.join(random.choices(string.ascii_lowercase, k=8))
+email = email + "@"
+email = email + ''.join(random.choices(string.ascii_lowercase, k=4))
+email = email + ".com"
 print("Random Email = ", email)
 input_email.send_keys(email)
 print("Filled 'Email'")
@@ -86,11 +90,34 @@ input_phone = driver.find_element(By.XPATH, '/html/body/div[1]/main/div[3]/div/d
 # /html/body/div[1]/main/div[3]/div/div[3]/div/div[3]/div[2]/div[6]/div[3]/form/div[2]/section/div[4]/div/div/input
 
 # Fill 'Phone'
-phone = ''.join(random.choices(string.digits, k=8))
+# Telephone numbers 00498999998-000 to 00498999998-999 are not connected to service by network provider
+phone = "00498999998"
+phone = phone + ''.join(random.choices(string.digits, k=3))
 print("Random Email = ", phone)
 input_phone.send_keys(phone)
 print("Filled 'Phone'")
 time.sleep(0.1)
+
+# Get Element 'Company'
+input_company = driver.find_element(By.XPATH, '/html/body/div[1]/main/div[3]/div/div[3]/div/div[3]/div[2]/div[6]/div[3]/form/div[2]/section/div[5]/div/div/input')
+# /html/body/div[1]/main/div[3]/div/div[3]/div/div[3]/div[2]/div[6]/div[3]/form/div[2]/section/div[5]/div/div/input
+
+# Fill 'Company'
+company = ''.join(random.choices(string.ascii_uppercase, k=7))
+print("Random Company Name = ", company)
+input_company.send_keys(company)
+print("Filled 'Company'")
+time.sleep(0.1)
+
+# Get Select Element 'Country'
+select_country = Select(driver.find_element(By.XPATH, '/html/body/div[1]/main/div[3]/div/div[3]/div/div[3]/div[2]/div[6]/div[3]/form/div[2]/section/div[6]/div/div/div/select'))
+
+# Select 'Country'
+# not a random selection
+select_country.select_by_value('Argentina')
+print("Selected 'Country': Argentina")
+time.sleep(0.1)
+
 
 # Get Element "Message"
 input_message = driver.find_element(By.XPATH, '/html/body/div[1]/main/div[3]/div/div[3]/div/div[3]/div[2]/div[6]/div[3]/form/div[2]/section/div[7]/div/div/textarea')
@@ -112,12 +139,24 @@ input_agree = driver.find_element(By.XPATH, '/html/body/div[1]/main/div[3]/div/d
 # /html/body/div[1]/main/div[3]/div/div[3]/div/div[3]/div[2]/div[6]/div[3]/form/div[2]/section/div[9]/div/div/fieldset/span/label
 print("Found checkbox 'I agree'")
 
-
 # Click checkbox 'I agree'
 tick_checkbox = ActionChains(driver)
 print("new actions chains driver")
 tick_checkbox.move_to_element(input_agree).click().perform()
 print("actions chains clicked checkbox")
+
+# Get reCAPTCHA label
+time.sleep(1)
+label_captcha = driver.find_element(By.XPATH, '/html/body/div[1]/main/div[3]/div/div[3]/div/div[3]/div[2]/div[6]/div[3]/form/div[2]/section/div[10]/div/div/div/div/div/iframe')
+time.sleep(1)
+
+# Hover over "Services"
+hover_captcha = ActionChains(driver)
+hover_captcha.move_to_element(label_captcha).perform()
+time.sleep(1)
+
+label_captcha.click()
+time.sleep(2)
 
 # Get submit button
 btn_submit = driver.find_element(By.XPATH, "/html/body/div[1]/main/div[3]/div/div[3]/div/div[3]/div[2]/div[6]/div[3]/form/div[2]/section/div[11]/div/button")
