@@ -2,7 +2,7 @@
 
 ## Test Cases for Sogeti Interview Test
 
-- All test were created on an Windows 10 OS, PyCharm IDE, Postman Web Browser Platform
+- All tests were created with Windows 10 OS, PyCharm IDE, Postman Web Browser Platform
 - Other operating systems or IDEs have not been tested
 
 ### Requirements
@@ -21,13 +21,15 @@
 - open command line with admin rights
 - type in:
 
+
 > cd C:\
 > python
 
 
 Microsoft Store will now open Python 3.12 download page
-Click Get on the  Python 3.12 page
-Python 3.12 will be installed
+- Click Get on the  Python 3.12 page
+- Python 3.12 will be installed
+
 
 After installation you can optionally run following in CMD to see installed files
 
@@ -42,7 +44,7 @@ After installation you can optionally run following in CMD to see installed file
     - https://www.jetbrains.com/pycharm/download/
 - Run the installer exe after download to install PyCharm
 
-<img src='./docs/img/pycharm/00_install_pycharm.JPG' width='640'>
+<img src='./docs/img/pycharm/00_install_pycharm.JPG' width='540'>
 
 ### Open UI test directory
 
@@ -51,8 +53,8 @@ After installation you can optionally run following in CMD to see installed file
 	-  [UI Test Directory](/testCases/API%20Tests)
 
 
-If not included in the repository it may be required to install Selenium into the environment.
-Therefore navigate to the terminal and enter:
+If not included in the repository it may be required to install Selenium into the environment.  
+Therefore navigate to the terminal and enter:  
 
 > pip install selenium
 
@@ -69,17 +71,46 @@ Therefore navigate to the terminal and enter:
 <img src='./docs/img/pycharm/01_test1_run.JPG' width='640'>
 
 
-Chrome Browser will now open up and follow the instructions from the test script automatically.
-I recommend not to navigate or click anything while the test is running
+Chrome Browser will now open up and follow the instructions from the test script automatically.   
+I recommend not to navigate or click anything while the test is running.  
 The results of the performed test will appear in the PyCharm console
 
 
 <img src='./docs/img/pycharm/02_test1_result.JPG' width='640'>
 
 
-Repeat same procedure with test cases 2 and 3.
-Choose "testCase2.py" and "testCase3.py" and run each test.
+Repeat procedure again with test cases 2 and 3.  
+Choose "testCase2.py" and "testCase3.py" and run each test.  
 Again, Chrome Browser will open and run the tests while results will be printed on the PyCharm console
+
+
+### Results of tests 1...3
+
+#### Test Case 1
+
+Steps 1 until 3 worked fine.  
+The last step (4) will not work as intended.  
+Unfortunately the navigation bar element "Services" and also the element "Automation" in the expanded menu are not recognized as active, although they are visibly selected.
+I tried "selected" & "enabled" commands which both did not work.
+
+
+#### Test Case 2
+
+Steps 1 until 5 worked fine.  
+In step 4 another input field and one dropdown menu had to be tested additionally.  
+- Company text field
+- Country selection
+Also inputs have not been totally random:  
+For the email input obligatory "@" character had to be added as well as a valid ending like ".com".  
+As phone number a random disconnected number was chosen (only the last three digits are random).  
+After step 5 a reCaptcha box had to be clicked in order to submit the contact request.  
+Unfortunately, after to many tries to click onto the reCaptcha element I could not go on to the next step.  
+If trying after a certain time or from a different system reCaptcha may have been successfully passed.
+
+
+#### Test Case 3
+
+All steps passed.
 
 
 ## Postman Web Browser Platform
@@ -167,3 +198,17 @@ Results from the performed tests will appear automatically
 <img src='./docs/img/postman/11_testCase5_PostResults.JPG' width='640'>
 
 
+### Results of tests 4..5
+
+#### Test Case 4
+
+Steps 1..3 passed.  
+In Step 4 the test did fail.  
+In the tested JSON file there are equal place names with different postal areas.  
+The program did find the first entry with the right name which has a different post code.  
+
+
+#### Test Case 5
+
+Unfortunately I was not able to create a sufficient data driven test for this case.  
+This was the first time I did data driven API testing so I am not yet sure how to solve this task.  
