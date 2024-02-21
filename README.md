@@ -100,12 +100,14 @@ Steps 1 until 5 worked fine.
 In step 4 another input field and one dropdown menu had to be tested additionally.  
 - Company text field
 - Country selection
+
+
 Also inputs have not been totally random:  
 For the email input obligatory "@" character had to be added as well as a valid ending like ".com".  
 As phone number a random disconnected number was chosen (only the last three digits are random).  
 After step 5 a reCaptcha box had to be clicked in order to submit the contact request.  
 Unfortunately, after to many tries to click onto the reCaptcha element I could not go on to the next step.  
-If trying after a certain time or from a different system reCaptcha may have been successfully passed.
+Trying again after a certain ammount time or run tests from a different system reCaptcha may be successfully passed.
 
 
 #### Test Case 3
@@ -127,7 +129,7 @@ A account is required to use Postman
 
 Postman Test Cases have been exported in a JSON file
 All API tests can be imported by using the provided file from the repository
-- ([Link](./testCases/API%20Tests/Sogeti%20API%20Test.postman_collection.json))
+- [see linked file](./testCases/API%20Tests/Sogeti%20API%20Test.postman_collection.json)  
 
 
 - Open your Workspace
@@ -138,7 +140,7 @@ All API tests can be imported by using the provided file from the repository
 - Import this file: ([Sogeti API Test.postman_collection.json](./testCases/API%20Tests/Sogeti%20API%20Test.postman_collection.json))
 - Click OK
 
-All API test cases should be imported and 
+All API test cases should be imported and ...  
 
 
 <img src='./docs/img/postman/02_nav_import.JPG' width='640'>
@@ -146,7 +148,7 @@ All API test cases should be imported and
 <img src='./docs/img/postman/03_import_dropfile.JPG' width='640'>
 
 
-You will now see the directory "Sogeti API Test" with testCase4 and ..5 in your Workspace
+you will now see the directory "Sogeti API Test" with testCase4 and ..5 in your Workspace
 
 <img src='./docs/img/postman/04_workspace_test4%2B5.JPG' width='640'>
 
@@ -155,7 +157,7 @@ You will now see the directory "Sogeti API Test" with testCase4 and ..5 in your 
 
 To run testCase4 proceed as follows:
 
-- click "testCase4" and move to the "Tests" register to see the testing scripts
+- click "testCase4" and move to the "Tests" register to see the testing script
 - click "Send" to run the test
 - results will be shown below under "Test Results"
 
@@ -166,9 +168,9 @@ To run testCase4 proceed as follows:
 
 ### Run Test Case 5
 
-As this case is data driven, "Body" and the "Run Collection" have to be configured
+As this case is data driven "Body" and the "Runner"(Run Collection) have to be configured  
 
-- click the testCase5 register and navigate to "Body" to see the added variables
+Click the testCase5 register and navigate to "Body" to see the added variables inside the JSON body and also the added endpoints in the URL  
 
 <img src='./docs/img/postman/09_testCase5_body.JPG' width='640'>
 
@@ -191,9 +193,8 @@ As this case is data driven, "Body" and the "Run Collection" have to be configur
 
 - click "Run Sogeti API Test"
 
-Now all data from the uploaded JSON file will be posted to the new endpoints
-
-Results from the performed tests will appear automatically
+Now all data from the uploaded JSON file will be posted to the new endpoints.  
+Results from the performed tests will appear automatically.  
 
 <img src='./docs/img/postman/11_testCase5_PostResults.JPG' width='640'>
 
